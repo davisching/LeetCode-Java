@@ -22,7 +22,7 @@
     public ListNode swapPairs(ListNode head) {
         if (head == null || head.next == null) return head;
         ListNode t = head.next;
-        head.next = swapPairs(head.next.next);
+        head.next = swapPairs(t.next);
         t.next = head;
         return t;
     }
