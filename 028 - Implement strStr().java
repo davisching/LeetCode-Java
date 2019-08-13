@@ -1,4 +1,4 @@
-/*  026 - Remove Duplicates from Sorted Array - From @ LeetCode.com
+/*  028 - Implement strStr() - From @ LeetCode.com
     
     Implement strStr().
     Return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
