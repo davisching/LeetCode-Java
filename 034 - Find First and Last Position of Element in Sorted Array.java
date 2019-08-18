@@ -32,7 +32,6 @@
                 l = m + 1;
             else
                 return m;
-            
         }
         return -1;
     }
