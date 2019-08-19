@@ -15,11 +15,19 @@
     Solution by @ Davis Ching, 2019
  */
  
- class Solution {
-    public int[] searchRange (int[] nums, int target) {
+class Solution {
+    public int[] searchRange(int[] nums, int target) {
         int x = binarySearch(nums, target);
-        if (x < 0) return new int[] {-1, -1};
-        return getRange(nums, x);
+        return (x < 0) ? new int[] {-1, -1} : getRange(nums, x);
+    }
+    
+    private int[] getRange (int[] nums, int x) {
+        int i = x, j = x;
+        while (i >= 0 && nums[i] == nums[x])
+            i -= 1;
+        while (j < nums.length && nums[j] == nums[x])
+            j += 1;
+        return new int[] {i+1, j-1};
     }
     
     private int binarySearch (int[] nums, int target) {
@@ -30,18 +38,8 @@
                 r = m - 1;
             else if (target > nums[m])
                 l = m + 1;
-            else
-                return m;
+            else return m;
         }
         return -1;
-    }
-    
-    private int[] getRange (int[] nums, int x) {
-        int i = x, j = x;
-        while (i >= 0 && nums[i] == nums[x])
-            i -= 1;
-        while (j < nums.length && nums[j] == nums[x])
-            j += 1;
-        return new int[] {i+1, j-1};
     }
 }
