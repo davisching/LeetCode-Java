@@ -1,4 +1,4 @@
-/*  038 - Count and Say - From @ LeetCode.com
+/*  039 - Combination Sum - From @ LeetCode.com
     
     Given a set of candidate numbers (candidates) (without duplicates) and a target number (target), 
     find all unique combinations in candidates where the candidate numbers sums to target.
