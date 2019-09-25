@@ -1,4 +1,4 @@
-/*  83 - Remove Duplicates from Sorted List - From @ LeetCode.com
+/*  083 - Remove Duplicates from Sorted List - From @ LeetCode.com
     
     Given a sorted linked list, delete all duplicates such that each element appear only once.
 
