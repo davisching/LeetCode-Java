@@ -1,2 +1,4 @@
 # LeetCode-Java
-重新開始用Java語言來刷LeetCode的題
+
+一天一道Leetcode 预防掉发好气色
+
