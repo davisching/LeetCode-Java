@@ -19,6 +19,6 @@
  
  class Solution {
     public boolean isPowerOfFour(int num) {
-        return java.util.regex.Pattern.matches("1(00)*", Integer.toBinaryString(num));
+        return Integer.toString(num, 4).matches("10*");
     }
 }
