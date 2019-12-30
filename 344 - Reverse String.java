@@ -17,8 +17,6 @@
     }
 
     private void swap(char[] s, int i, int j) {
-        char t = s[i];
-        s[i] = s[j];
-        s[j] = t;
+        char t = s[i]; s[i] = s[j]; s[j] = t;
     }
 }
