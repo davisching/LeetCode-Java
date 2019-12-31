@@ -23,6 +23,7 @@
         1 <= n <= 1000
 
     Solution by @ Davis Ching, 2020.
+                  and happy new year, guys!
  */
  
  class Solution {
