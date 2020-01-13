@@ -38,10 +38,11 @@
     Solution by @ Davis Ching, 2020.
  */
  
- class Solution {
+class Solution {
     public int evalRPN(String[] tokens) {
         Stack<Integer> stack = new Stack<>();
         for (String token : tokens) {
+            int x = 0, y = 0;
             switch(token) {
                 case "+":
                     x = stack.pop();
